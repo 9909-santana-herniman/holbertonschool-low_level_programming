@@ -24,7 +24,6 @@ _putchar(result / 10 + '0');
 _putchar(result % 10 + '0');
 b++;
 }
-b = 0;
 a++;
 _putchar('\n');
 }
