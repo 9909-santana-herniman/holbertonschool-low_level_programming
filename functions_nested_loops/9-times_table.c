@@ -11,9 +11,8 @@ while (a <= 9)
 while (b <= 9)
 {
 result = a * b;
-if (b != 0)
 {
-_putchar(',');
+_putchar(' ');
 _putchar(' ');
 }
 if (result < 10)
@@ -22,9 +21,7 @@ _putchar(' ');
 }
 _putchar(result / 10 + '0');
 _putchar(result % 10 + '0');
-b++;
 }
-a++;
 _putchar('\n');
 }
 }
