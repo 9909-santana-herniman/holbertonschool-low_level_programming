@@ -5,9 +5,7 @@
  * @o: Number two.
  * Return: Add number one and number two.
  */
-int add(int a, int b)
+int add(int n, int o)
 {
-return (a + b);
+return (n + o);
 }
-
-  
