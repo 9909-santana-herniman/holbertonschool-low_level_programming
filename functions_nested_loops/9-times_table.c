@@ -20,8 +20,8 @@ if (result < 10)
 {
 _putchar(' ');
 }
-_putchar(product / 10 + '0');
-_putchar(product % 10 + '0');
+_putchar(result / 10 + '0');
+_putchar(result % 10 + '0');
 b++;
 }
 b = 0;
