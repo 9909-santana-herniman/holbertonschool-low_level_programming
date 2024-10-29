@@ -15,7 +15,7 @@ _putchar(' ');
 }
 _putchar(92);
 if (a < (n - 1))
--putchar('\n');
+_putchar('\n');
 }
--putchar('\n');
+_putchar('\n');
 }
