@@ -15,7 +15,7 @@ _putchar(' ');
 b++;
 }
 _putchar(92);
-if (a < n)
+ if (a < (n - 1))
 {
 _putchar('\n');
 }
