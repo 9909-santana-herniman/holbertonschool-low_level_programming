@@ -12,9 +12,9 @@ while (a < 10)
 {
 while (b < 15)
 {
-if (b >=10)
+if (b >= 10)
 {
-_putchar((b /10) + 48);
+_putchar((b / 10) + 48);
 }
 _putchar((b % 10) + 48);
 b++;
