@@ -14,7 +14,7 @@ for (b = 0; b < a; b++)
 _putchar(' ');
 }
 _putchar(92);
-if (i < (n - 1))
+if (a < (n - 1))
 -putchar('\n');
 }
 -putchar('/n');
