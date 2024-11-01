@@ -10,11 +10,10 @@ int count = 0;
 while (count >= 0)
 {
 if (s[count] == '\0')
-{
-_putchar('\n');
 break;
+count++;
 }
+for (count--; count >= 0; count--)
 _putchar(s[count]);
-count--;
-}
+_putchar('\n');
 }
