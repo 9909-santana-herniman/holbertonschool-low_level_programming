@@ -6,5 +6,8 @@
  */
 int _strlen(char *s)
 {
-char = ("My first strlen!");
+int count = 0;
+while (*(s + count) != '\0')
+count++;
+return (count);
 }
