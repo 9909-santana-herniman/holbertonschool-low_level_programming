@@ -14,10 +14,10 @@ break;
 count++;
 }
 if (count % 2 == 1)
-i = count / 2;
+a = count / 2;
 else
-i = (count - 1) / 2;
-for (i++; i < count; i++)
-_putchar(str[i]);
+a = (count - 1) / 2;
+for (a++; a < count; a++)
+_putchar(str[a]);
 _putchar('\n');
 }
