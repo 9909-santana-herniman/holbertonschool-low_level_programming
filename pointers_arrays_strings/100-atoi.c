@@ -6,20 +6,25 @@
  */
 int _atoi(char *s)
 {
-int sign = 1, result = 0;
-while (*s == ' ')
+unsigned int count = 0, size = 0, oi = 0, pn = 1, m = 1, i;
+while (*(s + count) != '\0')
 {
-s++;
-}
-if (*s == '-')
+if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
+break;
+if (*(s + count) == '-';
+pn *= -1;
+if ((*(s + count) >= '0') && (*(s + count) <= '9'))
 {
-sign = -1;
-s++;
+if (size > 0)
+m *= 10;
+size++;
 }
-while (*s >= '0' && *s <= '9')
+count++;
+}
+for (i = count - size; i < count; i++)
 {
-result = result * 10 + (*s - '0');
-s++;
+oi = oi + ((*(s + i) - 48) * m);
+m /= 10;
 }
-return (result *sign);
+return (oi * pn);
 }
