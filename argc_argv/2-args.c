@@ -7,7 +7,7 @@
  * Return: Always 0.
  */
 
-int main(int argc, char *argv[1])
+int main(int argc, char *argv[])
 {
 int count;
 for (count = 0; count < argc; count++)
