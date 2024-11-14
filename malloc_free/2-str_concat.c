@@ -24,7 +24,7 @@ for (j = 0; s2[j] != '\0'; j++)
 
 result = malloc(sizeof(char) * (i + j + 1));
 
-if (strout == NULL)
+if (result == NULL)
 {
 free(result);
 return (NULL);
