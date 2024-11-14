@@ -6,15 +6,13 @@
  * @s2: second string.
  * Return: NULL on failure, otherwise pointer to new memory space.
  */
-
 char *str_concat(char *s1, char *s2)
 {
-char result;
-unsigned int i, j, k, length;
+char *result;
+unsigned int i, j, k;
 
 if (s1 == NULL)
 s1 = "";
-
 if (s2 == NULL)
 s2 = "";
 
@@ -30,13 +28,12 @@ if (result == NULL)
 free(result);
 return (NULL);
 }
-
+	
 for (k = 0; k < i; k++)
 result[k] = s1[k];
 
-length = j;
-for (j = 0; j <= length; k++, j++)
-result[k] = s2[j];
+for (k = 0; k < j; k++)
+result[i +j] = '\0';
 
 return (result);
 }
