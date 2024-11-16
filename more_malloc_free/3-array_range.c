@@ -17,7 +17,7 @@ if (min > max)
 return (NULL);
 
 arr = malloc(sizeof(*arr) * ((max - min) + 1));
-if (ar == NULL)
+if (arr == NULL)
 return (NULL);
 
 for (i = 0; min <= max; i++, min++)
