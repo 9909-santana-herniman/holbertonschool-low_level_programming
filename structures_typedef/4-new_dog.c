@@ -24,6 +24,8 @@ return (NULL);
 
 for (lname = 0; name[lname]; lname++)
 ;
+for (lowner = 0; onwer[lowner]; lowner++)
+;
 ptr_dog->name = malloc(lname + 1);
 ptr_dog->owner = malloc(lowner + 1);
 
