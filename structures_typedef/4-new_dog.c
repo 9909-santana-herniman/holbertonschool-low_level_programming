@@ -38,7 +38,7 @@ return (NULL);
 }
 for (i = 0; i < lname; i++)
 ptr_dog->name[i] = name[i];
-prt_dog->name[i] = '\0';
+ptr_dog->name[i] = '\0';
 
 ptr_dog->age = age;
 
