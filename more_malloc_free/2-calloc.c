@@ -18,7 +18,7 @@ return (NULL);
 
 ptr = malloc(nmemb * size);
 
-if (p == NULL)
+if (ptr == NULL)
 return (NULL);
 
 for (i = 0; i < (nmemb * size); i++)
