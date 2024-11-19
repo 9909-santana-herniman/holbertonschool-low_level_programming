@@ -7,7 +7,7 @@
  * Description:
  * This function uses variadic arguments to calculate the sum of all
  * the integers passed to it. The function:
- * - Initializes a `va_list` to access the variable arguments.
+ * - Initialises a `va_list` to access the variable arguments.
  * - Iterates through the arguments and adds them together.
  * - Returns the total sum.
  *
