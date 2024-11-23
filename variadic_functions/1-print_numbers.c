@@ -16,7 +16,7 @@ unsigned int i; /* Counter for the loop */
 va_start(valist, n);
 
 /* Iterate through the numbers */
-for (i = 0, i < n; i++)
+ for (i = 0; i < n; i++)
 {
 /* Print the current number */
 printf("%d", va_arg(valist, int));
