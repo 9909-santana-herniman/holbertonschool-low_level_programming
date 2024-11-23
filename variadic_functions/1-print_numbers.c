@@ -10,7 +10,7 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list valist; /* List to hold variable arguments */
-unsigned int; /* Counter for the loop */
+unsigned int i; /* Counter for the loop */
 
 /* Initialise the 'va_list' to retrieve arguments */
 va_start(valist, n);
