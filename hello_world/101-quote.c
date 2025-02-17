@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <unistd.h>
 
 /**
@@ -11,7 +10,7 @@ int main(void)
 {
 	const char message[] =
 		"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	size_t len = sizeof(message) - 1;
+	size_t len = sizeof(message) - 1; /* Exclude null terminator */
 	ssize_t bytes_written = write(2, message, len);
 
 	if (bytes_written == -1 || (size_t)bytes_written != len)
