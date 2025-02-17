@@ -2,7 +2,7 @@
 /**
  * main - Print string using 'puts' function
  *
- * return: Always return 0 on successful execution.
+ * Return: Always return 0 on successful execution.
  */
 
 int main(void)
