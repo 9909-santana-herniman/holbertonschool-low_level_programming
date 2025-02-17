@@ -1,7 +1,7 @@
 #include <unistd.h>
 
 /**
- * main - print a string without printf or puts 
+ * main - print a string with write 
  *
  * Return: Should return 1.
  */
