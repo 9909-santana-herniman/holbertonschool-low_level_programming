@@ -1,5 +1,8 @@
 #include <stdio.h>
-/* Print string using 'puts' function */
+/**
+ * puts - Print string using 'puts' function
+ * return: zero
+ */
 
 int main(void)
 {
