@@ -1,9 +1,9 @@
 #include <unistd.h>
 
 /**
- * main - print a string with write 
+ * main - print a string with write
  *
- * Return: Should return 1.
+ * Return: Should return (1).
  */
 
 int main(void)
