@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * main - Assign a random number to the n variable
+ * main - Determine positive, negative, or zero result
  *
- * Return: Positive, Negative or Zero
+ * Return: Always 0 (Success)
  */
 
 int main(void)
