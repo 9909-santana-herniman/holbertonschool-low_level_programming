@@ -5,6 +5,8 @@
  * Return: Always return 0 on successful execution.
  */
 
+/* puts - automatically adds a newline character */
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
