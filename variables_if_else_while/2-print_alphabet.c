@@ -8,10 +8,10 @@
 
 int main(void)
 {
-	/* Declare and initailise a char array */
+	/* Declare and initialise the letter a */
 	char lowercase = 'a';
 
-	/* Loop while the current letter is less than or equal to z */
+	/* Check the current letter is less than or equal to z */
 	while (lowercase <= 'z')
 	{
 		putchar(lowercase); /* Print the current letter */

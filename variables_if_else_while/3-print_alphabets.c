@@ -8,17 +8,19 @@
 
 int main(void)
 {
+	/* Declare and initialise both lower and upper case letters starting with a */
 	char lowercase = 'a';
 	char uppercase = 'A';
 
-	while (lowercase <= 'z' && uppercase <= 'Z')
+	/* While both lower and upper case are less than z */
+	while (lowercase <= 'z')
 	{
-		putchar(lowercase);
-		lowercase++;
+		putchar(lowercase); /* Print current letter */
+		lowercase++; /* Increment to next letter */
 	}
 	while (uppercase <= 'Z')
 	{
-		putchar(uppercase);
+		putchar(uppercase); 
 		uppercase++;
 	}
 	putchar('\n');
