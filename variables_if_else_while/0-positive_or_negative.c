@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+/**
+ * main - Assign a random number to the variable
+ *
+ * Return: Positive, Negative or Zero
+ */
+
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	
+	/* if the number is greater than 0*/
+	if (n > 0)
+	{
+		printf("%u is positive\n", n);
+	}
+	/* if the number is less than 0*/
+	else if (n < 0)
+	{
+		printf("%u is negative\n", n);
+	}
+	/*if the number is 0*/
+	else
+	{
+		printf("%u is zero\n", n);
+	}
+
+	return (0);
+}
