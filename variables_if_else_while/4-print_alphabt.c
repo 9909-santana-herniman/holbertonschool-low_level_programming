@@ -12,7 +12,7 @@ int main(void)
 
 	while (lowercase <= 'z')
 	{
-	if (lowercase != 'q' && 'e') /* Skip the letters q and e */
+	if (lowercase != 'q' || 'e') /* Skip the letters q and e */
 	{
 		putchar(lowercase);
 	}
@@ -20,5 +20,5 @@ int main(void)
 	}
 
 	putchar('\n');
-	return (0);	
+	return (0);
 }
