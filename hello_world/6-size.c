@@ -8,11 +8,14 @@
 
 int main(void)
 {
-	char c;
+	char c; 
 	int i;
 	long int li;
 	long long int lli;
 	float f;
+	
+	/* Use %lu for unsigned int */
+	/* sizeof - returns the size in bytes of a variable or data type */
 
 	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
 	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(i));
