@@ -16,7 +16,7 @@ int main(void)
 	/* Checks if current letter is not equal to q or e */
 	if (lowercase != 'q' && lowercase != 'e')
 	{
-		putchar(lowercase);
+		putchar(lowercase); /* Print current letter */
 	}
 	lowercase++;
 	}
