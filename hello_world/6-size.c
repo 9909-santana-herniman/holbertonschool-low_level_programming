@@ -3,7 +3,7 @@
 /**
  * main - size of various types
  *
- * Return: Always return 0 on successful execution.
+ * Return: Always 0 (Success)
  */
 
 int main(void)
