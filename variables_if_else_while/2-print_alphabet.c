@@ -9,18 +9,16 @@
 int main(void)
 {
 	/* Declare and initailise a char array */
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	/* Initialise an int index to 0 */
-	int i = 0;
+	char lowercase = 'a';
 	
-	/* Loop while the current char is NOT null terminator */
-	while (alphabet[i] != '\0')
+	/* Loop while the current letter is less than or equal to z */
+	while (lowercase <= 'z')
 	{
-		putchar(alphabet[i]);
-		i++; /* Increment to move to next character */
+		putchar(lowercase); /* Print the current letter */
+		lowercase++; /* Increment the letter to move to next */
 	}
+	
 	/* This prints a new line */
 	putchar('\n');
-
 	return (0);
 }
