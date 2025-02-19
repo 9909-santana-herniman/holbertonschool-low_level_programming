@@ -3,7 +3,7 @@
 /**
  * main - Use printf to display string
  *
- * Return: Always return 0 on successful execution.
+ * Return: Always 0 (Success)
  */
 
 int main(void)
