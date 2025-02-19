@@ -8,11 +8,13 @@
 
 int main(void)
 {
+	/* Print all letters in lowercase characters */
 	char lowercase = 'a';
 
 	while (lowercase <= 'z')
 	{
-	if (lowercase != 'q' && lowercase != 'e') /* Skip the letters q and e */
+	/* Checks if current letter is not equal to q or e */
+	if (lowercase != 'q' && lowercase != 'e')
 	{
 		putchar(lowercase);
 	}
