@@ -18,17 +18,17 @@ int main(void)
 	/* if the number is zero*/
 	if (n == 0)
 	{
-		printf("%u is zero\n", n);
+		printf("%d is zero\n", n);
 	}
 	/* if the number is greater than zero*/
 	else if (n > 0)
 	{
-		printf("%u is positive\n", n);
+		printf("%d is positive\n", n);
 	}
 	/*if the number is less than 0*/
 	else
 	{
-		printf("%u is negative\n", n);
+		printf("%d is negative\n", n);
 	}
 
 	return (0);
