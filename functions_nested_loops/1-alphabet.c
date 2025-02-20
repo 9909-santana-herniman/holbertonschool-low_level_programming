@@ -14,7 +14,7 @@ void print_alphabet(void)
 	while (lowercase <= 'z')
 	{
 		_putchar(lowercase);
-		lowercase = lowercase + 1;	
+		lowercase = lowercase + 1;
 	}
 	_putchar('\n');
 	return;
