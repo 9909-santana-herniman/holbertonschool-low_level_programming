@@ -6,15 +6,14 @@
  * Return: void
  */
 
-/* Function to print the alphabet in lowercase */
 void print_alphabet(void)
 {
-	char lowercase = 'a';
+	char letter = 'a'; /* declare starting point a */
 
-	while (lowercase <= 'z')
+	while (letter <= 'z') /* while letter is less than or equal to z */
 	{
-		_putchar(lowercase);
-		lowercase = lowercase + 1;
+		_putchar(letter); /* display current letter */
+		letter++; /* increment letter by 1 */
 	}
-	_putchar('\n');
+	_putchar('\n'); /* followed by new line */
 }
