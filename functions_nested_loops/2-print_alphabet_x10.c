@@ -6,15 +6,22 @@
  * Return: void
  */
 
-/* Function to print the alphabet in lowercase */
 void print_alphabet_x10(void)
 {
-	char lowercase = 'a';
+	int reps = 0; /* Use to keep track of reps of printed alphabet */
+	char letter; /* The range of letters */
 
-	while (lowercase <= 'z')
+	/* Using a nested loop */
+	while (reps < 10) /* less than 10 */
 	{
-		_putchar(lowercase);
-		lowercase = lowercase + 1;
+		letter = 'a'; /* set letter to a */
+
+		while (letter <= 'z') /* less than or equal to z */
+		{
+			_putchar(letter); /* display current letter */
+			letter++; /* increment letter by 1 */
+		}
+	_putchar('\n'); /* display new line */
+	reps++; /* increment reps by 1 */
 	}
-	_putchar('\n');
 }
