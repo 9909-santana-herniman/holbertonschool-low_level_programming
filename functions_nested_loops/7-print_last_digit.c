@@ -8,13 +8,14 @@
 
 int print_last_digit(int n)
 {
-	if ((n == 0) || (n > 0))
+	/* ld = last digit */
+	int ld = n % 10; /* Find last digit */
+
+	if (n < 0) /* If number is negative*/
 	{
-		return (n % 10);
+		ld *= -1; /* Make it positive */
 	}
-	else
-	{
-		return ((n % 10) * -1);
-	}
-	_putchar(n);
+
+	_putchar(ld + '0'); /* Print last digit as a character */
+	return (ld); /* Return last digit as integer*/
 }
