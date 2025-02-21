@@ -8,6 +8,7 @@
 
 int _islower(int c)
 {
+	/* Used ASCII to search range of letters */
 	if (c >= 97 && c <= 122)
 	{
 		return (1);
