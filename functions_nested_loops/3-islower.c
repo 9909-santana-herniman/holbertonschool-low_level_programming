@@ -2,14 +2,14 @@
 
 /**
  * _islower - A function that checks for lowercase character
- * @c: parameter is a c integer
+ * @c: Character integer
  * Return: 1 if c is lowercase, otherwise 0.
  */
 
 int _islower(int c)
 {
-	/* Used ASCII to search range of letters */
-	if (c >= 97 && c <= 122)
+	/* Check the range of lowercase letters */
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
