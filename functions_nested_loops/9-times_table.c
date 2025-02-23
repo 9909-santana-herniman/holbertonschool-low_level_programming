@@ -48,6 +48,6 @@ void times_table(void)
 			c++; /* Move to next c by 1*/
 		}
 		_putchar('\n'); /* Print new line */
-		row++; /* Move to next r by 1 */
+		r++; /* Move to next r by 1 */
 	}
 }
