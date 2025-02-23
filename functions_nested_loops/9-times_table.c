@@ -8,41 +8,46 @@
 
 void times_table(void)
 {
-	int row = 0;
-	int column = 0;
-	int result;
+	int r = 0; /* r - row */
+	int c = 0; /* c - column */
+	int result; /* Stores the sum of r times c */
 
-	while (row <= 9)
+	while (r <= 9) /* Loops through 0 to 9 */
 	{
-		column = 0;
+		c = 0; /* Resets column to 0 at the start of each row */
 
-		while (column <= 9)
+		while (c <= 9)
 		{
-			result = row * column;
-
-				if (column == 0)
+			result = r * c;
+				/* First c of the r */
+				if (c == 0)
 				{
-					_putchar(result + 48);
+					_putchar(result + '0');
 				}
+				/* If result is a single digit (0-9) */
 				else if (result < 10)
 				{
-					_putchar(32);
-					_putchar(32);
-					_putchar(result + 48);
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(result + '0');
 				}
+				/* If result is a two digit number */
 				else
 				{
-					_putchar(32);
-					_putchar((result / 10) + 48);
-					_putchar((result % 10) + 48);
+					_putchar(' ');
+					/* Prints first digit */
+					_putchar((result / 10) + '0');
+					/* Prints second digit */
+					_putchar((result % 10) + '0');
 				}
-				if (column < 9)
+				/* If not the last c, print ',' and ' ' */
+				if (c < 9)
 				{
-					_putchar(44);
+					_putchar(',');
 				}
-			column++;
+			c++; /* Move to next c by 1*/
 		}
-		_putchar('\n');
-		row++;
+		_putchar('\n'); /* Print new line */
+		row++; /* Move to next r by 1 */
 	}
 }
