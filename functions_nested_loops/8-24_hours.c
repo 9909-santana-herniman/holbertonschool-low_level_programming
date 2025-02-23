@@ -16,13 +16,13 @@ void jack_bauer(void)
 		minute = 0; /* Reset minute to 0 for each new hour */
 	while (minute < 60)
 	{
-		_putchar((hour / 10) + 48); /* First digit for hour */
-		_putchar((hour % 10) + 48); /* Second digit for hour */
+		_putchar((hour / 10) + '0'); /* First digit - tens */
+		_putchar((hour % 10) + '0'); /* Second digit - ones */
 
-		_putchar(58); /* Colon character */
+		_putchar(':'); /* Colon character */
 
-		_putchar((minute / 10) + 48); /* Fist digit for minute */
-		_putchar((minute % 10) + 48); /* Second digit for minute */
+		_putchar((minute / 10) + '0'); /* Fist digit - tens */
+		_putchar((minute % 10) + '0'); /* Second digit - ones */
 
 		_putchar('\n'); /* New line after each time */
 		minute++; /* Increment the minute */
