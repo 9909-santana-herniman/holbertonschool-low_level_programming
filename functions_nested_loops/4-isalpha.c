@@ -8,8 +8,8 @@
 
 int _isalpha(int c)
 {
-	/* Use ASCII to search range of upper and lower case letters */
-	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+	/* Search range of upper and lower case letters */
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
 		return (1);
 	}
