@@ -8,6 +8,7 @@
 
 int _isdigit(int c)
 {
+	/* Check the range from 0 to 9 */
 	if ((c >= '0') && (c <= '9'))
 	{
 		return (1);
