@@ -18,7 +18,7 @@ void print_line(int n)
 	/* If line is less than n, print the line n times */
 	else
 	{
-		while(line < n)
+		while (line < n)
 		{
 			_putchar('_');
 			line++;
