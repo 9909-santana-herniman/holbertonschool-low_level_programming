@@ -21,19 +21,23 @@ int main(void)
 	{
 		if ((range % 3 == 0) && (range % 5 == 0))
 		{
-			printf("%s%s ", num3, num5);
+			printf("%s%s", num3, num5);
 		}
 		else if (range % 3 == 0)
 		{
-			printf("%s ", num3);
+			printf("%s", num3);
 		}
 		else if (range % 5 == 0)
 		{
-			printf("%s ", num5);
+			printf("%s", num5);
 		}
 		else
 		{
-			printf("%d ", range);
+			printf("%d", range);
+		}
+		if (range < 100)
+		{
+			putchar(' ');
 		}
 		range++;
 	}
