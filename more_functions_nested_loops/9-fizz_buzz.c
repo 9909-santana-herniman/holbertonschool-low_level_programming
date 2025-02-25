@@ -19,23 +19,22 @@ int main(void)
 
 	while (range <= 100)
 	{
-		
 		if ((range % 3 == 0) && (range % 5 == 0))
 		{
 			printf("%s%s ", num3, num5);
 		}
-			if (range % 3 == 0)
-			{
-				printf("%s ", num3);
-			}
-			else if (range  % 5 == 0)
-			{
-				printf("%s ", num5);
-			}
-			else
-			{
-				printf("%d ", range);
-			}
+		else if (range % 3 == 0)
+		{
+			printf("%s ", num3);
+		}
+		else if (range % 5 == 0)
+		{
+			printf("%s ", num5);
+		}
+		else
+		{
+			printf("%d ", range);
+		}
 		range++;
 	}
 	putchar('\n');
