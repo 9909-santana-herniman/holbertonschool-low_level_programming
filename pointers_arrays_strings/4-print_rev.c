@@ -9,17 +9,18 @@
 
 void print_rev(char *s)
 {
+	char *start = s; /* Store the origninal position */
+
 	/* A loop to find the null terminator */
 	while (*s != '\0')
 	{
 		s++;
 	}
-	/* A loop to find the last character of the string */
-	/* Then print each character in reverse */
-	while (*s - 1)
+	s--; /* Move one step back to last character of string*/
+	while (s >= start) /* Print down to the first character */
 	{
 		_putchar(*s);
 		s--;
 	}
-	_putchar('\n');
+	_putchar('\n'); /* Print new line */
 }
