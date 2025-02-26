@@ -8,7 +8,7 @@
 
 int _strlen(char *s)
 {
-	/* Keeps track of the string length */ 
+	/* Keeps track of the string length */
 	int len = 0;
 
 	/* Iterate through the characters until null character */
@@ -18,9 +18,9 @@ int _strlen(char *s)
 	}
 	return (len);
 
-	/* (s + len) - calculates the memory address
-	 * of the len-th character in the string.
-	 *
-	 * *(s + len) - retrieves the character stored at the
-	 * memory address calculated in previous step. */
+	/* (s + len) - calculates the memory address */
+	/* of the len-th character in the string.*/
+
+	/* *(s + len) - retrieves the character stored at the */
+	/* memory address calculated in previous step. */
 }
