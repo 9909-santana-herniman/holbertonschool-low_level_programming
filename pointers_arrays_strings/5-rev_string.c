@@ -8,19 +8,28 @@
 
 void rev_string(char *s)
 {
-	int a;
-	int b;
-	char *start = s;
+	int length = 0;
+	int firstChar;
+	int lastChar;
+	char temp;
 
-	while (*s != '\0')
+	/* Find the length of the string */
+	while (s[length] != '\0')
 	{
-		s = s + 1;
+		length++;
 	}
-	s = s - 1;
-	while (s >= start)
+	
+	/* Set up indexes for swapping */
+	firstChar = 0;
+	lastChar = length - 1;
+
+	/* Swap characters */
+	while (firstChar < lastChar)
 	{
-		
+		temp = s[firstChar];
+		s[firstChar] = s[lastChar];
+		s[lastChar] = temp;
+		firstChar++; /* Move forward */
+		lastChar--; /* Move backward */
 	}
-	_putchar('\n');
 }
-
