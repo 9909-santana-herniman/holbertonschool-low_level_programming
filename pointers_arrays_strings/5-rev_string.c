@@ -18,7 +18,7 @@ void rev_string(char *s)
 	{
 		length++;
 	}
-	
+
 	/* Set up indexes for swapping */
 	firstChar = 0;
 	lastChar = length - 1;
