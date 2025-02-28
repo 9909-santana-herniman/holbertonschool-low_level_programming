@@ -33,7 +33,7 @@ void puts_half(char *str)
 	while (str[index] != '\0') /* Loop through from the half point */
 	{
 		_putchar(str[index]); /* Print each character */
-		index = index + 1; /* Move to the next character */	
+		index = index + 1; /* Move to the next character */
 	}
 	_putchar('\n'); /* Followed by new line */
 }
