@@ -12,7 +12,7 @@ void print_rev(char *s)
 	char *start = s; /* Store the origninal position */
 
 	/* A loop to find the null terminator */
-	while (*s != '\0')
+	while (*s != '\0') /* '*s' points to first character */
 	{
 		s++;
 	}
