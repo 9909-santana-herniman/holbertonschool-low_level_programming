@@ -12,7 +12,7 @@ void puts_half(char *str)
 {
 	int index = 0; /* Index variable */
 	int length; /* Variable to store length */
-	int half_index;
+	int half_index; /* Store halfway length variations */
 
 	while (str[index] != '\0') /* Find length of string */
 	{
@@ -28,12 +28,12 @@ void puts_half(char *str)
 	{
 		half_index = (length + 1) / 2;
 	}
-	
+
 	index = half_index; /* Start at the halfway index */
 	while (str[index] != '\0') /* Loop through from the half point */
 	{
 		_putchar(str[index]); /* Print each character */
-	       index = index + 1; /* Move to the next character */	
+		index = index + 1; /* Move to the next character */	
 	}
 	_putchar('\n'); /* Followed by new line */
 }
