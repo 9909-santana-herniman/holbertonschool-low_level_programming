@@ -11,10 +11,13 @@ void puts2(char *str)
 {
 	int i = 0; /* Index variable */
 
-	while (str[i] != '\0') /* If not null terminator */
+	while (str[i] != '\0') /* Loop through characters */
 	{
-		_putchar(str[i]); /* Print every other character */
-		i = i + 2; /* Skip the next one */
+		if (i % 2 == 0) /* Check if 'i' is even */
+		{
+			_putchar(str[i]);
+			i = i + 2;
+		}
 	}
 	_putchar('\n'); /* Followed by new line */
 }
