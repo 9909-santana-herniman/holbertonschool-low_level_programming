@@ -13,11 +13,11 @@ void puts2(char *str)
 
 	while (str[i] != '\0') /* Loop through characters */
 	{
-		if (i % 2 == 0) /* Check if 'i' is even */
+		if (i % 2 == 0) /* Check if 'i' is even indexed */
 		{
 			_putchar(str[i]);
-			i = i + 2;
 		}
+		i = i + 1;
 	}
 	_putchar('\n'); /* Followed by new line */
 }
