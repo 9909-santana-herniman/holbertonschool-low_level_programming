@@ -18,8 +18,7 @@ void print_array(int *a, int n)
 		printf("%d", a[i]); /* Print the number */
 		if (i < n - 1) /* Print, only if it's NOT the last element */
 		{
-			_putchar(','); /* Print a comma */
-			_putchar(' '); /* Print a space after comma */
+			printf(", ");
 		}
 		i = i + 1; /* Move to next element in the array */
 	}
