@@ -8,29 +8,31 @@
 
 int _atoi(char *s)
 {
-	int i = 0;
+	int i = 0; /* Index loop variable */
 	int sign = 1;
-	int num = 0;
+	int endResult = 0;
 	int started = 0; /* To track if we've started collecting digits */
 
 	/* Loop through characters */
 	while (s[i] != '\0')
 	{
-		/* Count the '-' and '+' signs */
+		/* Handle the '-' */
 		if (s[i] == '-')
 		{
+			if (!started) /* Only adjust sign before number starts */
 			sign = sign * -1; /* Flip sign for every '-' */
 		}
 		else if (s[i] >= '0' && s[i] <= '9') /* Convert digits */
 		{
-			num = num * 10 + (s[i] - '0');
-			started = 1; /* Mark we started extracting numbers */
+			started = 1;
+			endResult = endResult * 10 + (s[i] - '0');
 		}
-		else if (started) /* Stop if a non digit appears after number */
+		else if (started)
 		{
-			break;
+			return (endResult * sign);
 		}
+
 		i = i + 1; /* Move to next character */
 	}
-	return (num * sign); /* Apply sign and return result */
+	return (endResult * sign); /* Apply sign and return result */
 }
