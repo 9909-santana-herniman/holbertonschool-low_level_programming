@@ -11,7 +11,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int dest_len; /* Set length count for dest */ 
+	int dest_len; /* Set length count for dest */
 	int src_index; /* Set index count for src */
 
 	dest_len = 0;
