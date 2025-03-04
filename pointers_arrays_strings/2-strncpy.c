@@ -10,19 +10,19 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0; /* Initialise counter */
+	int src_index = 0; /* Initialise counter */
 
-	/* Copy characters from src to dest */
-	while (i < n && src[i] != '\0')
+	/* Copy characters from src to dest, stopping at n or '\0' */
+	while (src_index < n && src[src_index] != '\0')
 	{
-		dest[i] = src[i];
-		i = i + 1;
+		dest[src_index] = src[src_index];
+		src_index++; /* Move to next character */
 	}
-	/* Fill remaining space in dest with '\0' */
-	while (i < n)
+	/* If src is shorter than n, add dest with null characters */
+	while (src_index < n)
 	{
-		dest[i] = '\0';
-		i = i + 1;
+		dest[src_index] = '\0';
+		src_index++;
 	}
 	return (dest); /* Return pointer to dest */
 }
