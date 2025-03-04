@@ -28,6 +28,6 @@ char *_strncat(char *dest, char *src, int n)
 		src_index = src_index + 1;
 	}
 	dest[dest_len] = '\0';
-	
+
 	return (dest);
 }
