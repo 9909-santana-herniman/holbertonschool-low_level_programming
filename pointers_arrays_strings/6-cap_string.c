@@ -44,5 +44,5 @@ char *cap_string(char *s)
 		}
 	i++; /* Move to the net character in the string */
 	}
-	return (s); 
+	return (s);
 }
