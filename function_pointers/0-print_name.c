@@ -15,7 +15,7 @@
 void print_name(char *name, void (*f)(char *))
 {
 	/* Check if either name or function pointer is NULL to prevent errors */
-	if (name == NULL  && f == NULL)
+	if (name == NULL && f == NULL)
 	{
 		return; /* Exit the function without doing anything */
 	}
