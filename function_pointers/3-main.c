@@ -18,7 +18,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (argv[2][1])
+
+	operator = get_op_func(argv[2]);
+
+	if (argv[2][1] || operator == NULL)
 	{
 		printf("Erro\n");
 		exit(99);
@@ -31,14 +34,6 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		exit(100);
-	}
-
-	operator = get_op_func(argv[2]);
-
-	if (operator == NULL)
-	{
-		printf("Error\n");
-		exit(99);
 	}
 
 	printf("%d\n", operator(num1, num2));
