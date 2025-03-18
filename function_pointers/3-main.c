@@ -18,6 +18,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+	if (argv[2][1])
+	{
+		printf("Error\n");
+		exit(99);
+	}
 
 	operator = get_op_func(argv[2]);
 
@@ -25,12 +30,6 @@ int main(int argc, char *argv[])
 	{
 		printf("Erro\n");
 		exit(99);
-	}
-
-	if ((operator == op_div || operator == op_mod) && num2 == 0)
-	{
-		printf("Error\n");
-		exit(100);
 	}
 
 	num1 = atoi(argv[1]);
