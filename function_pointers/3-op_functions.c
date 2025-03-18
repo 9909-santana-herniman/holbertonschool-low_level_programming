@@ -41,6 +41,7 @@ int op_mul(int a, int b)
  * @a: First integer.
  * @b: Second integer.
  * Return: Division of a by b.
+ * Exits with error code 100 if division by 0 occurs.
  */
 
 int op_div(int a, int b)
@@ -50,7 +51,7 @@ int op_div(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
-	return (a / b;
+	return (a / b);
 }
 
 /**
@@ -58,6 +59,7 @@ int op_div(int a, int b)
  * @a: First integer.
  * @b: Second integer.
  * Return: Remainder of the division of a and b.
+ * Exits with error code 100 if modulo by 0 occurs.
  */
 
 int op_mod(int a, int b)
