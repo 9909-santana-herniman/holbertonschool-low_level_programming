@@ -27,6 +27,12 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
+	if ((*arg[2] == '/' || *argv[2] == '%') && num2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
 	operator = get_op_func(argv[2]);
 
 	if (operator == NULL)
