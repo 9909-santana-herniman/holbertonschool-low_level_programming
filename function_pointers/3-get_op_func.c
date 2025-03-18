@@ -26,9 +26,9 @@ int (*get_op_func(char *s))(int, int)
 	/* Loop through the ops array to find the matching operator */
 	while (ops[i].op != NULL)
 	{
-	/* Compare the s (user input) with the first character of ops[i].op */
+	/* Compare the s (user input) with the first character of ops[i].op[] */
 	/* s[1] == '\0' ensures that only a single character was provided */
-		if (s[0] == ops[i].op && s[1] == '\0')
+		if (s[0] == ops[i].op[0] && s[1] == '\0')
 		{
 			/* Return the corresponding function */
 			return (ops[i].f);
