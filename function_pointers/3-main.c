@@ -20,14 +20,15 @@ int main(int argc, char *argv[])
 	}
 
 	operator = get_op_func(argv[2]);
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
 
-	if (argv[2][1] && operator == NULL)
+	if (operator == NULL)
 	{
 		printf("Erro\n");
 		exit(99);
 	}
+
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
 
 	if ((operator == op_div || operator == op_mod) && num2 == 0)
 	{
