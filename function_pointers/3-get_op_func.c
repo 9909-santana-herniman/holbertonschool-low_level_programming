@@ -21,7 +21,7 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL} /* Marks the end of the array */
 };
-	int i = 0;
+	int i;
 
 	/* Loop through the ops array to find the matching operator */
 	while (ops[i].op != NULL)
@@ -35,6 +35,6 @@ int (*get_op_func(char *s))(int, int)
 		}
 	i++;
 	}
-	
+
 	return (NULL); /* Return NULL if no matching operator is found */
 }

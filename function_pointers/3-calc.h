@@ -6,7 +6,7 @@
 
 /**
  * struct op - Stuct op
- * 
+ *
  * @op: The opertator as a string.
  * @f: A pointer to the function that performs the
  * corresponding operation.
