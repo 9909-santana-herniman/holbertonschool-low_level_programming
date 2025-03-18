@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((operator  == op_div || operator  == op_mod) && num2 == 0)
+	if ((operator == op_div || operator == op_mod) && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
