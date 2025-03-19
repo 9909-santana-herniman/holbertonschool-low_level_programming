@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 {
 	va_list anything; /* Store variadic arguments */
 	int i = 0; /* Index for iterating through the format string*/
-	char *string_value; /* Pointer for string arguments */
+	char *str_value; /* Pointer for string arguments */
 	char *separator = "";
 
 	va_start(anything, format); /* Initialise the argument list */
@@ -37,11 +37,8 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(anything, double));
 				break;
 			case 's': /* Print a string */
-				string_value = va_arg(anything, char *);
-				if (string_value != NULL)
-					printf("%s", string_value);
-				else
-					printf("%s", "(nil)");
+				str_value = va_arg(anything, char *);
+				printf("%s", str_value ? str_value : "(nil)");
 				break;
 		}
 		}
