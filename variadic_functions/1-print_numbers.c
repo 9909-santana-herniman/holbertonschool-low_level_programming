@@ -15,6 +15,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(numbers, n); /* Initialise the argument list */
 
+	if (n == 0)
+	{
+		printf("\n");
+		return;
+	}
+
 	/* Print the first number before entering the loop */
 	if (n > 0)
 	{
