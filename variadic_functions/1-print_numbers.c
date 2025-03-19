@@ -15,12 +15,17 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(numbers, n); /* Initialise the argument list */
 
-	/* */
-	num_list = va_arg(numbers, unsigned int);
-	printf("%d", num_list);
-
-	while (i < n)
+	/* Print the first number before entering the loop */
+	if (n > 0)
 	{
+	num_list = va_arg(numbers, unsigned int); /* Get first number */
+	printf("%d", num_list); /* Print first number */
+	}
+
+	/* Loop through remaining numbers */
+	while (i < n - 1) /* Don't access more arguments than provided */
+	{
+		/* Get next number */
 		num_list =  va_arg(numbers, unsigned int);
 		if (separator != NULL)
 		{
@@ -29,7 +34,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		printf("%d", num_list);
 		i++;
 	}
-	va_end(numbers);
+	va_end(numbers); /* Clean up argument list */
 
-	printf("\n");
+	printf("\n"); /* Print new line */
 }
