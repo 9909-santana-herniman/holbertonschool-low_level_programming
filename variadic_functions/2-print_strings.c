@@ -4,7 +4,7 @@
 /**
  * print_strings - A function that prints strings, followed by a new line.
  * @separator: String to be printed between strings.
- * @n: The number of arguments to be passed throught the function.
+ * @n: The number of arguments to be passed through the function.
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		return;
 	}
 
-	/* Loop through all  arguments */
+	/* Loop through all arguments */
 	while (i < n)
 	{
 		strings = va_arg(string_list, char *);
