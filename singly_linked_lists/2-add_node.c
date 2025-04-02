@@ -37,6 +37,8 @@ list_t *add_node(list_t **head, const char *str)
 		free(name_node); /* Free memory allocated for the node */
 		return (NULL);
 	}
+	/* Set the length of the string */
+	name_node->len = strlen(str);
 	/* Set the name_node's 'next' to the previous head */
 	name_node->next = *head;
 	/* Change 'head' to point to recently created node */
