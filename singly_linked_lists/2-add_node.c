@@ -19,6 +19,8 @@
  * if it failed.
  */
 
+size_t _strlen(const char *s);
+
 list_t *add_node(list_t **head, const char *str)
 {
 	/* Initialised a node called 'name_node' */
@@ -38,11 +40,20 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 	/* Set the length of the string */
-	name_node->len = strlen(str);
+	name_node->len = _strlen(str);
 	/* Set the name_node's 'next' to the previous head */
 	name_node->next = *head;
 	/* Change 'head' to point to recently created node */
 	*head = name_node;
 
 	return (name_node);
+}
+size_t _strlen(const char *s)
+{
+	size_t len = 0;
+	while (s[len] != '\0') /* Loop until we reach '\0' */
+	{
+		len++;
+	}
+	return (len);
 }
