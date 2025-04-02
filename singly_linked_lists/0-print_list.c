@@ -7,7 +7,7 @@
  *
  * Description: This function traverses through a singly linked list and
  * prints the string and length stored in each node. If a node's string is
- * NULL, it prints "(nil)" instead. It also counts the total number of 
+ * NULL, it prints "(nil)" instead. It also counts the total number of
  * nodes in the list and returns the count.
  *
  * Return: Number of nodes printed.
