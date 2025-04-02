@@ -29,9 +29,15 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		return (NULL); /* If malloc fails, return NULL */
 	}
+
 	/* Duplicate string to avoid modifying the original */
 	name_node->str = strdup(str);
-	/* Change 'next' of new node to point to head */
+	if (name_node->str == NULL) 
+	{
+		free(name_node); /* Free memory allocated for the node */
+		return (NULL);
+	}
+	/* Change 'next' of new node to point to head (which makes head NULL */
 	name_node->next = *head;
 	/* Change 'head' to point to recently created node */
 	*head = name_node;
