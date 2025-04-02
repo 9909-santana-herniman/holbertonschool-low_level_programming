@@ -17,6 +17,11 @@ size_t print_list(const list_t *h)
 {
 	size_t n = 0; /* Initialize a counter to track the number of nodes */
 
+	/* Check if list is empty */
+	if (h == NULL)
+	{
+		return (0);
+	}
 	/* Loop through the list until we reach the end (NULL) */
 	while (h != NULL)
 	{
@@ -24,12 +29,12 @@ size_t print_list(const list_t *h)
 		if (h->str == NULL)
 		{
 		/* Print a placeholder for NULL strings with length 0 */
-			printf("[%u] (nil)\n", 0); /* Output: [0] (nil) */
+			printf("[%d] (nil)\n", 0); /* Output: [0] (nil) */
 		}
 		else
 		{
 		/* Print the length and string stored in the current node */
-			printf("[%u] %s\n", h->len, h->str);
+			printf("[%d] %s\n", h->len, h->str);
 		}
 		n++; /* Increment the counter for each node visited */
 		h = h->next; /* Move to the next node in linked list */
