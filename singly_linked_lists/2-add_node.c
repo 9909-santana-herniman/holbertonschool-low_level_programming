@@ -1,6 +1,23 @@
 #include "lists.h"
 #include <string.h>
 
+
+/**
+ * _strlen - Calulates the length of a string manually.
+ * @s: The string whose length is to be counted.
+ * Return: The length of the string.
+ */
+size_t _strlen(const char *s)
+{
+	size_t len = 0;
+
+	while (s[len] != '\0') /* Loop until we reach '\0' */
+	{
+		len++;
+	}
+	return (len);
+}
+
 /**
  * add_node - A function that adds a new node at the beginning
  * of a list_t list.
@@ -10,9 +27,6 @@
  * Return: The address of the new node, otherwise NULL
  * if it failed.
  */
-
-size_t _strlen(const char *s);
-
 list_t *add_node(list_t **head, const char *str)
 {
 	/* Initialised a node called 'name_node' */
@@ -43,19 +57,3 @@ list_t *add_node(list_t **head, const char *str)
 	return (name_node);
 }
 
-/**
- * _strlen - Calculates the length of a string manually.
- * @s: The string whose lenght is to be counted.
- * Return: The length of the string.
- */
-
-size_t _strlen(const char *s)
-{
-	size_t len = 0;
-
-	while (s[len] != '\0') /* Loop until we reach '\0' */
-	{
-		len++;
-	}
-	return (len);
-}
