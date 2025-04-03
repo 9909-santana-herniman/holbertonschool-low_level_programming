@@ -16,7 +16,7 @@
 
 typedef struct list_s
 {
-	char *str;
+	char *str; /* For storing data */
 	unsigned int len;
 	struct list_s *next;
 } list_t;
@@ -36,5 +36,22 @@ list_t *add_node_end(list_t **head, const char *str);
 
 /* Frees a list_t list */
 void free_list(list_t *head);
+
+/* Helper Functions */
+/**
+ * _strlen - Calulates the length of a string manually.
+ * @s: The string whose length is to be counted.
+ * Return: The length of the string.
+ */
+size_t _strlen(const char *s)
+{
+	size_t len = 0;
+
+	while (s[len] != '\0') /* Loop until we reach '\0' */
+	{
+		len++;
+	}
+	return (len);
+}
 
 #endif
