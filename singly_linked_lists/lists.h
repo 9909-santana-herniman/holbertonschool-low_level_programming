@@ -38,8 +38,4 @@ list_t *add_node_end(list_t **head, const char *str);
 /* Frees a list_t list */
 void free_list(list_t *head);
 
-/* Helper Functions */
-/* _strlen - Calulates the length of a string manually */
-size_t _strlen(const char *s);
-
 #endif
