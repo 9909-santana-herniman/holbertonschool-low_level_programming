@@ -16,10 +16,10 @@
 
 typedef struct list_s
 {
-	char *str; /* For storing data */
-	unsigned int len;
-	struct list_s *next;
-} list_t;
+	char *str; /* Pointer to a string (character array) */
+	unsigned int len; /* This holds the length of the string */
+	struct list_s *next; /* Pointer to the next node in the linked list */
+} list_t; /* Defines a data type called list_t */
 
 /* Function Prototypes */
 /* Prints all the elements */
