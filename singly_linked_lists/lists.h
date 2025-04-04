@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /* Data Structure */
 /**
@@ -28,7 +29,7 @@ size_t print_list(const list_t *h);
 /* Returns a number of elements linked */
 size_t list_len(const list_t *h);
 
-/* Adds a new node at the beginning of a list_t list*/
+/* Adds a new node at the beginning of a list_t list */
 list_t *add_node(list_t **head, const char *str);
 
 /* Adds a new node at the end of a list_t list */
@@ -38,20 +39,7 @@ list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 
 /* Helper Functions */
-/**
- * _strlen - Calulates the length of a string manually.
- * @s: The string whose length is to be counted.
- * Return: The length of the string.
- */
-size_t _strlen(const char *s)
-{
-	size_t len = 0;
-
-	while (s[len] != '\0') /* Loop until we reach '\0' */
-	{
-		len++;
-	}
-	return (len);
-}
+/* _strlen - Calulates the length of a string manually */
+size_t _strlen(const char *s);
 
 #endif
