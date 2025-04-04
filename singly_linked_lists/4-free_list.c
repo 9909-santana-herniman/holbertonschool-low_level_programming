@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * free_list -
- * @head:
+ * free_list - A function that frees a linked list.
+ * @head: Pointer to first node in linked list.
  */
 
 void free_list(list_t *head)
@@ -16,6 +16,13 @@ void free_list(list_t *head)
 	{
 		temp = current; /* Store reference to current node */
 		current = current->next; /* Move to next node in the list */
+
+		/* Free the string if it exists */
+		if (temp->str != NULL)
+		{
+			free(temp->str); /* Free memory for the string */
+		}
 		free(temp); /* Free memory allocated for current node */
 	}
+	head = NULL; /* Set head to NULL after freeing all nodes */
 }
