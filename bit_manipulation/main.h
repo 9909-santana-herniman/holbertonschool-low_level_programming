@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+int _putchar(char c);
+
 /* Function Prototypes */
 /* Converts a binary number to an unsigned int */
 unsigned int binary_to_uint(const char *b);
