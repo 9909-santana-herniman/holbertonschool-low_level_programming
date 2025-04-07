@@ -36,7 +36,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	/* Check if index is out of bounds */
 	if (temp == NULL)
-		return (1);
+		return (-1);
 
 	/* Update pointers to remove temp from the list */
 	if (temp->next != NULL)
