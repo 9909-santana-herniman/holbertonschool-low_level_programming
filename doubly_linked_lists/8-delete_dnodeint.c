@@ -13,8 +13,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	dlistint_t *temp = *head;
 	unsigned int current_index = 0;
 
-	if (*head == NULL) /* Check if list is empty */
+	if (*head == NULL || head == NULL) /* Check if list is empty */
+	{
 		return (-1);
+	}
 
 	if (index == 0) /* Handle deletion at index 0 (head node) */
 	{
