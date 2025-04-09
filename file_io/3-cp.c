@@ -55,9 +55,12 @@ int main(int argc, char *argv[])
 
 	/* Close both files */
 	if (close(fd_from) == -1)
-		error_exit(100, "Error: Can't close fd %d\n", argv[2]);
-	if (close(fd_to) == -1)
+	{
 		error_exit(100, "Error: Can't close fd %d\n", argv[1]);
-
+	}
+	if (close(fd_to) == -1)
+	{
+		error_exit(100, "Error: Can't close fd %d\n", argv[2]);
+	}
 	return (0);
 }
