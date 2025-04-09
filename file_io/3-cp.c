@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 
 	/* Check the number of arguments */
 	if (argc != 3)
-		error_exit(97, "Usage file_from file_to\n", NULL);
+		error_exit(97, "Usage: cp file_from file_to\n", NULL);
 
 	/* Open the source file (file_from) */
 	fd_from = open(argv[1], O_RDONLY);
