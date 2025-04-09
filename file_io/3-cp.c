@@ -36,34 +36,27 @@ int main(int argc, char *argv[])
 	ssize_t bytes_read, bytes_written;
 	char buffer[1024];
 
-	/* Check if the correct number of arguments is provided */
-	if (argc != 3)
+	if (argc != 3) /* Check if correct number of arguments is provided */
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
-	/* Open the source file in read-only mode */
-	fd_from = open(argv[1], O_RDONLY);
-
+	fd_from = open(argv[1], O_RDONLY); /* Open the source file in RDONLY */
 	/* Open or create the destination file in write mode */
 	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-
-	/* Handle errors related to opening files */
-	error_file(fd_from, fd_to, argv);
-
+	error_file(fd_from, fd_to, argv); /* Handle errors related to opening */
+	bytes_read = 1024;
 	/* Copy data from src to dest in chunks of up to 1024 bytes */
-	while ((bytes_read = read(fd_from, buffer, sizeof(buffer))) > 0)
+	while (bytes_read == 1024)
 	{
 		bytes_written = write(fd_to, buffer, bytes_read);
-		if (bytes_written == -1 || bytes_written != bytes_read)
+		if (bytes_written == -1)
 			error_file(0, -1, argv);
+		/* Handle errors related to reading from src file */
+		bytes_read = read(fd_from, buffer, 1024);
+		if (bytes_read == -1)
+			error_file(-1, 0, argv);
 	}
-	
-	/* Handle errors related to reading from src file */
-	if (bytes_read == -1)
-		error_file(-1, 0, argv);
-
 	/* Close both files and handle errors during closing */
 	error_close = close(fd_from);
 	if (error_close == -1)
@@ -78,5 +71,4 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 	return (0);
-
 }
