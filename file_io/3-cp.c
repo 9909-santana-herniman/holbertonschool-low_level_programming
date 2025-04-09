@@ -50,7 +50,6 @@ int main(int argc, char *argv[])
 	}
 	if (bytes_read == -1)
 	{
-		dprintf(STDERR_FILENO, "DEBUG: Read failed for file %s\n", argv[1]);
 		error_exit(98, "Error: Can't read from file %s\n", argv[1]);
 	}
 
