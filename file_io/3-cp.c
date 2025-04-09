@@ -49,13 +49,13 @@ int main(int argc, char *argv[])
 	/* Copy data from src to dest in chunks of up to 1024 bytes */
 	while (bytes_read == 1024)
 	{
-		bytes_written = write(fd_to, buffer, bytes_read);
-		if (bytes_written == -1)
-			error_file(0, -1, argv);
-		/* Handle errors related to reading from src file */
 		bytes_read = read(fd_from, buffer, 1024);
 		if (bytes_read == -1)
 			error_file(-1, 0, argv);
+
+		bytes_written = write(fd_to, buffer, bytes_read);
+		if (bytes_written == -1)
+			error_file(0, -1, argv);
 	}
 	/* Close both files and handle errors during closing */
 	error_close = close(fd_from);
