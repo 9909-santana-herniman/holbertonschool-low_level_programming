@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 			error_file(-1, 0, argv);
 
 		bytes_written = write(fd_to, buffer, bytes_read);
-		if (bytes_written == -1)
+		if (bytes_written == -1 || bytes_written != bytes_read)
 			error_file(0, -1, argv);
 	}
 	/* Close both files and handle errors during closing */
